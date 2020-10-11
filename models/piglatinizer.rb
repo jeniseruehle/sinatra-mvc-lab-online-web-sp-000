@@ -9,6 +9,7 @@ class PigLatinizer
       phrase = word.split(vowel, 2)
       if phrase[0] == ""
         piglatinize = "#{vowel}" + "#{phrase[1]}" + "way"
+      else 
         
 
 end 
