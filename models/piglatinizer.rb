@@ -1,10 +1,10 @@
 class PigLatinizer
   
   def piglatinize(phrase)
-    piglatin = phrase.split(" ")
     piglatinized = []
+    piglatin = phrase.split(" ")
     
-    piglatin.each do |words|
+    piglatin.each do |word|
       vowel = word.scan(/[aAeEiIoOuU]/).first
       phrase = word.split(vowel, 2)
       if phrase[0] == ""
