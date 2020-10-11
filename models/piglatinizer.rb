@@ -8,7 +8,7 @@ class PigLatinizer
       vowel = word.scan(/[aAeEiIoOuU]/).first
       phrase = word.split(vowel, 2)
       if phrase[0] == ""
-        piglatinize = "#{vowel}" + "#{phrase[1]}" + "way"
+        piglatinize = [vowel, phrase[1], way].join
       else 
         piglatinize = "#{vowel}" + "#{phrase[1]}" + "#{phrase[1]}" + "ay"
       end
