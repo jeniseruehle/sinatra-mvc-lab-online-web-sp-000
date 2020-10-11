@@ -15,5 +15,6 @@ class PigLatinizer
       piglatinized << piglatinize
     end 
     piglatinized.join(" ")
+  end 
 
 end 
