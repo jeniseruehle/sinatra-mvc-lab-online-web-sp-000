@@ -10,6 +10,10 @@ class PigLatinizer
       if phrase[0] == ""
         piglatinize = "#{vowel}" + "#{phrase[1]}" + "way"
       else 
-        
+        piglatinize = "#{vowel}" + "#{phrase[1]}" + "#{phrase[1]}" + "ay"
+      end
+      piglatinized << piglatinize
+    end 
+    piglatinized.join(" ")
 
 end 
